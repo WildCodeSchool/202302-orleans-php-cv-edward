@@ -10,3 +10,49 @@
     --font-title: 'Dancing Script', cursive; 
     --font-text: 'Roboto', sans-serif;
 }
+
+body {
+    margin:0;
+    font-family: var(--font-text);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../images/hedge.webp);
+    gap:  var(--spacing4);
+    padding: var(--spacing4);
+}
+
+header img {
+    width: max(30%, 360px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: var(--light);
+    margin: 0;
+}
+
+header h2 {
+    font-size: 3rem;
+    color: var(--light);
+    margin: 0;
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing3);
+}

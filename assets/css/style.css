@@ -130,6 +130,27 @@ section p {
     height: 40px;
 }
 
+dialog {
+    min-height: 60vh;
+    max-height: 80vh;
+    box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+dialog .close {
+    position: absolute;
+    top: var(--spacing2);
+    right: var(--spacing2);
+    text-decoration: none;
+}
+
+#more_presentation:target {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    display: block;
+}
+
 @media screen and (width < 600px) {
     .burger {
         display: flex;
